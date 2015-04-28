@@ -26,7 +26,20 @@ class TableSortedList
 
 //DO THIS
 //complete the implementation for TableSortedList
+template < class T >
+TableSortedList<T>::TableSortedList(int (*comp_item) (T* item_1, T* item_2), int (*comp_key) (String* key, T* item))
+{
+	sldl = new SortedListDoublyLinked();
+	
+	compare_items = comp_items;
+	compare_keys = comp_keys;
+}
 
+template < class T >
+TableSortedList<T>::~TableSortedList()
+{
+	
+}
 
 
 
