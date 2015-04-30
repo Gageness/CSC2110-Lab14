@@ -60,7 +60,9 @@ T* TableSortedList<T>::tableRetrieve(String* sk)
 template < class T >
 void TableSortedList<T>::tableInsert(T* item)
 {
-	return sldl->add(item);
+	
+	if (!tableRetrieve(item->getKey())) //disallow duplicates
+		sldl->add(item);
 }
 
 template < class T >
