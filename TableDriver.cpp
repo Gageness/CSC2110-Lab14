@@ -85,7 +85,7 @@ int main()
 	   slt->tableInsert(addCDs2->next());
    }
    
-   //finished size should be 310 since removed CDs are readded
+   //finished size should be 310 since removed CDs are re-added
    cout << "Size after inserting duplicates: " << slt->tableSize();
    
    cout << "\n\n\nIs the table empty? ";
